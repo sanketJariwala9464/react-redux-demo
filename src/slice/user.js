@@ -19,7 +19,7 @@ export const userSlice = createSlice({
         setIsAuthenticated(state, action) {
             state.isAuthenticated = action.payload
         },
-    },
+    }
 })
 
 export const { setUser, setToken, setIsAuthenticated } = userSlice.actions

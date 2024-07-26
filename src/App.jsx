@@ -5,13 +5,11 @@ import DefaultLayout from './layouts/default'
 
 function App() {
   return (
-    <div>
-      <DefaultLayout>
-        <Suspense fallback={<p>Loading...</p>}>
-          {useRoutes(router)}
-        </Suspense>
-      </DefaultLayout>
-    </div>
+    <DefaultLayout>
+      <Suspense fallback={<p>Loading...</p>}>
+        {useRoutes(router)}
+      </Suspense>
+    </DefaultLayout>
   )
 }
 
